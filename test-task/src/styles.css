@@ -1,0 +1,184 @@
+/* Темная тема */
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.theme {
+    width: 70px;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.theme:hover {
+    background-color: #bbb;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.theme:active {
+    background-color: #999;
+}
+
+.dark-theme .calc {
+    margin: 50px auto;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    font-family: Arial;
+    padding: 18px;
+    box-shadow: 4px 4px 4px gray;
+  }
+  
+  .dark-theme .btn {
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .dark-theme .btn:hover {
+    filter: brightness(120%);
+  }
+  
+  .dark-theme .btn:active {
+    filter: brightness(90%);
+  }
+  
+  .dark-theme .btn.bg-grey {
+    background-color: gray;
+  }
+  
+  .dark-theme .btn.bg-orange {
+    background-color: #ff9501;
+  }
+  
+  .dark-theme .buttons {
+    display: grid;
+    grid-template-areas:
+      'ac plus-minus percent division'
+      'seven eight nine multiply'
+      'four five six minus'
+      'one two three plus'
+      'zero zero dot equal';
+    grid-gap: 7px;
+    justify-items: center;
+  }
+  
+  .dark-theme .btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+  }
+  
+  .dark-theme .screen {
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 20px;
+  }
+  
+  .dark-theme .screen p {
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+  .calc-container.light-theme  {
+    background-color: black;
+  padding:18px;
+  }
+  
+  
+  .light-theme .calc {
+    margin: 50px auto;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    background: white; /* Фон калькулятора теперь светлый */
+    color: black; /* Текст стал черным */
+    font-family: Arial;
+    padding: 18px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    
+  }
+ 
+  .light-theme .btn {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0; /* Светлый фон для кнопок */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .light-theme .btn:hover {
+    filter: brightness(120%);
+  }
+  
+  .light-theme .btn:active {
+    filter: brightness(90%);
+  }
+  
+  .light-theme .btn.bg-grey {
+    background-color: #d0d0d0; /* Светлый серый цвет для кнопок */
+  }
+  
+  .light-theme .btn.bg-orange {
+    background-color: #ff9501;
+  }
+  
+  .light-theme .buttons {
+    display: grid;
+    grid-template-areas:
+      'ac plus-minus percent division'
+      'seven eight nine multiply'
+      'four five six minus'
+      'one two three plus'
+      'zero zero dot equal';
+    grid-gap: 7px;
+    justify-items: center;
+  }
+  
+  .light-theme .btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+  }
+  
+  .light-theme .screen {
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 20px;
+  }
+  
+  .light-theme .screen p {
+    font-size: 4rem;
+    margin: 0;
+  }
+  
