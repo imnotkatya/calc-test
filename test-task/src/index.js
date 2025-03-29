@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let a = ''; // Первое число
     let b = ''; // Второе число
     let sign = ''; // Знак операции
-    let theme = false; // Переменная для темы (по умолчанию светлая)
+    let theme = false; // Переменная для темы
   
     const digit = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'];
     const action = ['+', '-', 'X', '/'];
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       // Если нажата операция
       if (action.includes(key)) {
-        sign = key === 'X' ? '*' : key; // Исправляем "X" на "*"
+        sign = key === 'X' ? '*' : key;
         out.textContent = sign;
         console.log(a, b, sign);
         return;
