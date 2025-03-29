@@ -15,3 +15,12 @@ https://docs.google.com/document/d/1zpXXeSae-BlcxPKgw3DhxZA92cspVailrPYoaXSYrW8/
 4. npm install
 5. npm run build
 6. npm start
+
+
+## Prettier
+npm run format
+
+
+##Lint
+
+npm run lint
